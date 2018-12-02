@@ -1,0 +1,82 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace File_e_diretoório
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            {
+                /*  //Primeira forma de criação de diretório
+                  DirectoryInfo d = new DirectoryInfo(@"C:\Kelber\Aula_1(pos ferias)\File_e_diretoório");
+                  d.Create();
+                  //Segunda forma de criação
+                  Directory.CreateDirectory(@"C:\Kelber\Aula_1(pos ferias)\File_e_diretoório");
+
+                  //Mover diretório
+                  Directory d = new Directory(@"C:\\Kelber\Aula_1(pos ferias)");
+                  d.MoveTo(@"C:\Kelber\Aula_1(pos ferias)\File_e_diretoório", "C:\Kelber\Aula_1(pos ferias)");
+                  Directory.Move(@"C:\Kelber\Aula_1(pos ferias)");
+
+                  //File e FileInfo
+                  FileInfo f = new FileInfo(@"C:\Kelber\Aula_1(pos ferias)\File_e_diretoório");
+                  f.Create();
+
+                  //Cópia
+                  f.CopyTo("C:\\Kelber\Aula_1(pos ferias)");
+                  File.Copy("C:\\Kelber\Aula_1(pos ferias)", "copiar para outra");*/
+            }
+            {/*
+            DirectoryInfo d1 = new DirectoryInfo(@"C:\Curso\subdir1");
+                d1.Create();
+
+                Directory.CreateDirectory(@"C:\Curso\subdir1");
+                FileInfo f = new FileInfo(@"C:\Curso\arq1.txt");*/
+            }
+            {/*
+                //Lendo arquivos de um diretório-classe directory
+                string[] files = Directory.GetFiles(@"C:\Curso");
+
+                foreach (string file in files)
+                {
+                    Console.WriteLine(file);
+                }*/
+            }
+            {
+                /*  //Filtrando Leitura de Arquivos de um diretório-classe directory
+                  string[] file = Directory.GetFiles(@"C:\Curso");
+
+                  foreach (string file in files)
+                  {
+                      Console.WriteLine(file);
+                  }*/
+            }
+            FileInfo f = new FileInfo(@"C:\Curso\arq1.text");
+            f.Create();
+
+            File.Create(@"C:\Curso\arq2.text");
+
+            File.Create(@"C:\Curso\curso2.text");
+            File.Create(@"C:\Curso\curso_texto.text");
+
+            string[] files = Directory.GetFiles(@"C:\Curso\");
+            foreach (string file in files)
+            {
+                Console.WriteLine(file);
+            }
+
+            Console.WriteLine("\nArquivos começando com c:\n");
+
+            string[] files1 = Directory.GetFiles(@"C:\Curso\", "c*");
+            foreach(string file in files1)
+            {
+                Console.WriteLine(file ,"\n");
+            }
+        }
+    }
+}
