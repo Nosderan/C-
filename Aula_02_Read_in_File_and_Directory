@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+
+namespace Escritura_em_file_e_diretório
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            {
+                //string conteudo = File.ReadAllText(@"C:\Curso\arq1.txt");
+                //Console.WriteLine(conteudo);
+
+                //string[] Linhas = { "texto da linha 1", "texto da linha 2" };
+                //File.WriteAllText(@"C:\Curso\arq2.txt", Linhas);
+            }//Início da aula_Como escrever e ler em arquivo texto
+            {
+                // string nome = Console.ReadLine(); 
+                // File.WriteAllText(@"C:\Curso\arq2.txt", nome);
+                // Console.WriteLine(nome);
+            }//Exercício de escritura e leitura do file
+            {
+                int esc;
+
+                Console.WriteLine("1_Login\n2_Cadastro");
+
+                if (esc == 1)
+                {
+                    Console.Write("Nome: " + nome);
+                    Console.Write("Senha: " + senha);
+
+                }
+            }//Exercício de cadastro com escrita e leitura de dados 
+        }
+    }
+}
