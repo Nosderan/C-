@@ -61,3 +61,26 @@ Classe ContaException
           System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
     }
 }
+
+Tentativa de login do professor
+{
+            bool aut = true;
+            while(aut)
+            {
+                try
+                {
+                    double d;
+                    Console.WriteLine("Digite o nome: ");
+                    string nome = Console.ReadLine();
+                    bool z = double.TryParse(nome, out d);
+
+                    if (z == true) throw new Exception("Valor errado");
+                    else aut = false;
+                }
+
+                catch(Exception e)
+                {
+                    Console.WriteLine("Tente novamente: " + e.Message);
+                }
+            }
+}
