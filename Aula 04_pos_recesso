@@ -1,0 +1,39 @@
+/Meu programa 
+                {
+                    /*try
+                    {
+                    Conta c = new Conta();
+                    Console.WriteLine("Deposite: ");
+                    double d1 = Convert.ToDouble(Console.ReadLine());
+                    c.Deposit(d1);
+                    c.Saque(50);
+                    Console.WriteLine("saldo: " + c.ConsultaSaldo());
+
+                    }
+                    catch (ContaException e)
+                    {
+                        Console.WriteLine("\n---------------ERROR!!!!-------------------");
+                        Console.WriteLine("\nMENSAGEM: " + e.Message);
+                        Console.WriteLine("\nLOCAL: " + e.TargetSite);
+                        Console.WriteLine("\nSTACK:" + e.StackTrace);
+                    } //Aula_pos_recesso_02
+
+                    bool aut = true;
+                    while(aut)
+                    {
+                        try
+                        {
+                            double d;
+                            Console.WriteLine("Digite o nome: ");
+                            string nome = Console.ReadLine();
+                            bool z = double.TryParse(nome, out d);
+
+                            if (z == true) throw new Exception("Valor errado");
+                            else aut = false;
+                        }
+
+                        catch(Exception e)
+                        {
+                            Console.WriteLine("Tente novamente: " + e.Message);
+                        }
+                    }*/
